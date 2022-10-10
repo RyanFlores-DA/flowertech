@@ -4,7 +4,7 @@ var mes = '';
 var arrayDados = [];
 var arrayMes = [];
 var arrayDebitos = [];
-axios.get('http://flowertech.herokuapp.com/chart/')
+axios.get('https://flowertech.herokuapp.com/chart/')
     .then(response => criaListaDinamica(response.data))
     .catch(error => console.log(error))
 const criaListaDinamica = (dados) => {

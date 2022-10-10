@@ -6,7 +6,7 @@ var arrayNome = [];
 var arrayValor = [];
 var arrayMes = [];
 var arrayAno = [];
-axios.get('http://flowertech.herokuapp.com/priori/')
+axios.get('https://flowertech.herokuapp.com/priori/')
     .then(response => criaListaDinamica(response.data))
     .catch(error => console.log(error))
 const criaListaDinamica = (dados) => {

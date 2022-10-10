@@ -5,7 +5,7 @@ var arrayDados = [];
 var arrayMes = [];
 var arrayDebitos = [];
 function axiosD(){
-  axios.get('http://flowertech.herokuapp.com/v1/dados')
+  axios.get('https://flowertech.herokuapp.com/v1/dados')
     .then(response => criaListaDinamica(response.data))
     .catch(error => console.log(error))
 }
@@ -26,7 +26,7 @@ var arrayValor = [];
 var arrayMesP = [];
 var arrayAno = [];
 function axiosP(){
-  axios.get('http://flowertech.herokuapp.com/priori')
+  axios.get('https://flowertech.herokuapp.com/priori')
     .then(response => criaListaPriori(response.data))
     .catch(error => console.log(error))
 }
