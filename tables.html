@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="shortcut icon" href="../rywebapp/favicon/favicon.ico">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="tables.js"></script>
+  </head>
+  <body>
+    <table align="center">
+      <tr align="top">
+        <td style="width: 50%;">
+          <div id="hiddenDiv" style="display: none;">
+            <div id="myTable" ></div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <script type="text/javascript" DEFER="DEFER">
+      function sad() {
+        document.getElementById("hiddenDiv").style.display = "block";
+      }
+      setInterval(sad, 1000);
+      setInterval(drawTable, 1000);
+    </script>
+  </body>
+</html>
